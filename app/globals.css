@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&family=Nunito&family=Nunito+Sans:wght@400;600&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&family=Questrial&family=Raleway&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit-based browsers */
+/* Change the color of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #fecaca;
+  border-radius: 10px; /* roundness of the scrollbar handle */
+}
+
+.btn {
+  @apply px-4 py-[0.35rem] rounded-[5px] transition sm:cursor-pointer capitalize flex-shrink-0;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-[#0a986e];
+}
+
+.btn-primary-light {
+  @apply bg-primary-light text-primary hover:bg-[#07ae7146];
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.active {
+  color: goldenrod;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 5s infinite;
+}
+
+@keyframes bounce2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+.animate-bounce2 {
+  animation: bounce2 7s infinite;
+}
+
+@keyframes bounce3 {
+  0%,
+  100% {
+    transform: translateX(-40px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.animate-bounce3 {
+  animation: bounce 10s infinite;
+}
+
+.card {
+  @apply bg-white dark:bg-dark-card rounded-lg border dark:border-hover-color transition;
+}
+
+.card-bordered {
+  @apply border dark:border-hover-color transition;
+}
+
+/* General styles */
+p,
+a {
+  @apply text-muted;
+}
+
+/* JobSkillTags.css */
+
+.skill-wrapper {
+  white-space: nowrap; /* Prevents skills from wrapping */
+  display: inline-block; /* Display skills in a single line */
+  animation: marquee 10s linear infinite; /* Animation settings */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position (adjust for distance) */
+  }
+}
+
+.loader {
+  width: 250px;
+  height: 50px;
+
+  line-height: 50px;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #0bab7c;
+  letter-spacing: 0.2em;
+
+  /* Yatayda ve Düşeyde Ortalama   */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader::before,
+.loader::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #0bab7c;
+  position: absolute;
+  animation: load 0.9s infinite alternate ease-in-out;
+}
+.loader::before {
+  top: 0;
+}
+.loader::after {
+  bottom: 0;
+}
+
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+
+.thead {
+  @apply transition py-3 dark:text-text;
+}
+
+.trow {
+  @apply dark:border-b h-[40px] py-2 px-4 dark:border-dark-light transition;
+}
+
+.select-no-background {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+  /* Other desired styles */
+  background-color: transparent; /* Remove background */
+}

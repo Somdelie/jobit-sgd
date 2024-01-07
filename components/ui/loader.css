@@ -1,0 +1,89 @@
+:root {
+  --truckLoopDur: 10s;
+
+  /* colors */
+  --sky: rgb(135, 190, 255);
+  --r: rgb(255, 63, 48);
+  --rT: rgba(255, 63, 48, 0);
+  /* ... other color variables ... */
+}
+
+*,
+*:before,
+*:after {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* all */
+.progress-container,
+.progress-state,
+.dump-truck,
+.dump-truck div {
+  position: absolute;
+}
+
+/* progress */
+:root {
+  --truckRounds: 2;
+  --loops: 2;
+}
+
+.progress-container,
+.progress-box {
+  width: 6em;
+}
+
+.progress-container {
+  top: 50%;
+  left: calc(50% - 3em);
+  height: 7.5em;
+  z-index: 2;
+}
+
+.progress-box {
+  border-radius: 0 0 0.5em 0.5em;
+  border: 0.5em solid var(--dgy);
+  border-top: 0;
+  height: 4em;
+}
+
+.progress-fill {
+  animation: fillDirt var(--truckLoopDur) linear forwards;
+  background: var(--dbr);
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition: transform calc(var(--truckLoopDur) / 20) ease-out;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-state {
+  bottom: 0;
+  left: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.state-load {
+  animation: hideLoad calc(var(--truckLoopDur) * var(--truckRounds)) linear
+    forwards;
+}
+
+.state-finish {
+  animation: showFinish 0.3s calc(var(--truckLoopDur) * var(--truckRounds))
+    linear forwards;
+  visibility: hidden;
+}
+
+/* trucks */
+.dump-truck {
+  opacity: 0;
+  top: calc(50% - 4em);
+  width: 14em;
+  height: 8em;
+}
+
+/* ... rest of your CSS */
