@@ -19,7 +19,6 @@
     "@next-tools/dynamic": "^0.0.11",
     "@prisma/client": "^5.7.1",
     "@radix-ui/react-slot": "^1.0.2",
-    "@react-google-maps/api": "^2.19.2",
     "bcrypt": "^5.1.1",
     "chart.js": "^4.4.1",
     "class-variance-authority": "^0.7.0",

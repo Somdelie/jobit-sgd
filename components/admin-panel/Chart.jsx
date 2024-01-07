@@ -73,9 +73,7 @@ const Chart = () => {
           </LineChart>
         </ResponsiveContainer>
       </div>
-      <div className="border-2 border-dark-light h-[300px] text-text">
-        <Map />
-      </div>
+      <div className="border-2 border-dark-light h-[300px] text-text"></div>
     </div>
   )
 }
