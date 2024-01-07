@@ -11,7 +11,6 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@googlemaps/js-api-loader": "^1.16.2",
     "@mui/icons-material": "^5.15.3",
     "@mui/material": "^5.15.2",
     "@mui/styled-engine-sc": "^6.0.0-alpha.10",
@@ -26,7 +25,6 @@
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.16.16",
-    "google-maps-react": "^2.0.6",
     "jsonwebtoken": "^9.0.2",
     "lucide": "^0.303.0",
     "lucide-react": "^0.303.0",
@@ -39,7 +37,6 @@
     "react-apexcharts": "^1.4.1",
     "react-big-calendar": "^1.8.5",
     "react-chartjs-2": "^5.2.0",
-    "react-data-table-component": "^7.5.4",
     "react-dom": "^18",
     "react-hook-form": "^7.49.2",
     "react-hot-toast": "^2.4.1",
