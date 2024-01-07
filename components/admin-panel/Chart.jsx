@@ -1,5 +1,4 @@
 import React from "react"
-import Map from "../ui/UserMap"
 import {
   LineChart,
   Line,
