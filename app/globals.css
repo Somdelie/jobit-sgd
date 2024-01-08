@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&family=Nunito&family=Nunito+Sans:wght@400;600&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&family=Questrial&family=Raleway&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Lemon&family=Nunito:wght@200;300;600;700;800;900;1000&family=Salsa&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,7 +21,7 @@
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:bg-[#0a986e];
+  @apply bg-primary hover:bg-[#0a986e];
 }
 
 .btn-primary-light {
@@ -178,4 +178,15 @@ a {
   padding: 6px;
   /* Other desired styles */
   background-color: transparent; /* Remove background */
+}
+
+.blogText {
+  font-family: "Lemon", serif;
+  text-align: center;
+  line-height: 3;
+}
+
+.group {
+  background: transparent !important;
+  padding: 0 !important;
 }
