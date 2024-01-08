@@ -3,8 +3,6 @@ import "./globals.css"
 import { Inter as FontSans } from "next/font/google"
 import { Providers } from "@/context/Providers"
 import { UiProvider } from "@/context/UiContext"
-import { UserProvider } from "@/context/UserContext"
-
 const inter = Inter({ subsets: ["latin"] })
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,9 +20,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className}  dark:bg-dark-main transition text-textColor bg-main`}>
         <Providers>
-          <UserProvider>
-            <UiProvider>{children}</UiProvider>{" "}
-          </UserProvider>
+          <UiProvider>{children}</UiProvider>{" "}
         </Providers>
       </body>
     </html>

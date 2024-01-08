@@ -22,9 +22,11 @@ model User {
   id            String    @id @default(auto()) @map("_id") @db.ObjectId
   email         String    @unique
   firstName     String
+  lastName      String
+  idNumber      String
+  status      UserStatus @default(ACTIVE)
   password      String
   emailVerified DateTime?
-  lastName      String
   role          UserRole  @default(USER)
   address       Address?
 
@@ -47,4 +49,8 @@ type Address {
   city   String
   state  String
   zip    String
+}
+enum UserStatus {
+  ACTIVE
+  BLOCKED
 }

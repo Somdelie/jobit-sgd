@@ -4,7 +4,6 @@ import SidebarComp from "@/components/admin-panel/Sidebar"
 import React, { useState } from "react"
 
 const Layout = ({ children }) => {
-  const [showSidebar, setShowSidebar] = useState(false)
   return (
     <div className="flex">
       <SidebarComp />

@@ -8,7 +8,6 @@ import Recommended from "@/components/front-office/overview/Recommended"
 import Schedule from "@/components/front-office/overview/Schedule"
 import { FiArrowRight } from "react-icons/fi"
 import Featured from "@/components/front-office/home/Featured"
-import { useUser } from "@/context/UserContext"
 
 export default function Home() {
   return (

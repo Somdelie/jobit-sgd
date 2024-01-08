@@ -17,11 +17,9 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-
       <div className="w-full min-h-screen pt-20">
         <main>{loading ? <PageLoader /> : children}</main>
       </div>
-
       <Footer />
     </div>
   )
