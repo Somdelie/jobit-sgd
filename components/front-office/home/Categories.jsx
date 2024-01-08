@@ -37,7 +37,7 @@ const categories = [
 
 const Categories = () => {
   return (
-    <div className="mx-auto glass overflow-hidden h-[50px] max-w-[80%] rounded-[50px] mt-8 flex sticky z-20 top-16 transition gap-2 dark:text-white items-center">
+    <div className=" glass overflow-hidden h-[50px] rounded-[50px] mt-8 flex sticky z-20 top-16 transition gap-2 dark:text-white items-center">
       <h2 className="px-4 py-2 h-full bg-secondaryLightYellow text-dark-light font-semibold">
         Categories
       </h2>

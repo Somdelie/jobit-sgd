@@ -11,10 +11,10 @@ import Featured from "@/components/front-office/home/Featured"
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-[80%] mx-auto">
       <Categories />
       <Banner />
-      <div className="max-w-[80%] mx-auto py-4 dark:text-text">
+      <div className=" py-4 dark:text-text">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
           {/*---------------------------------------- Featured & Latest Jobs------------------------------------- */}
           <div className="md:col-span-2 h-fit sm:sticky top-0">

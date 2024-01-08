@@ -135,10 +135,10 @@ const JobsPage = () => {
   }
 
   return (
-    <div className="">
+    <div className="max-w-[80%] mx-auto">
       <Categories />
       <Filters />
-      <div className="flex max-w-[80%] mx-auto gap-6 mt-4">
+      <div className="flex gap-6 mt-4">
         <div className="glass w-[25%] h-[70vh] overflow-y-auto">
           <div className="flex items-center justify-between py-2 px-2 border-b border-gray-200 dark:border-gray-600">
             <h3 className="text-lg font-bold tracking-tight dark:text-white">

@@ -29,7 +29,7 @@ const featuredCards = [
 
 const Featured = () => {
   return (
-    <section className="mx-auto max-w-[80%] mt-6 border-t dark:border-dark-light border-gray-400 py-4">
+    <section className=" mt-6 border-t dark:border-dark-light border-gray-400 py-4">
       <div className="text-center">
         <Heading title="Need something done?" />
         <Paragraph

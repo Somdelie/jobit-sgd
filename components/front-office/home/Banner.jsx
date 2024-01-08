@@ -10,7 +10,7 @@ import Link from "next/link"
 const Banner = () => {
   // const fullText = "Hire the best freelancers for any job, online."
   return (
-    <div className="flex mt-4 items-center justify-center min-h-[60vh] gap-40 mx-auto max-w-[80%] ">
+    <div className="flex mt-4 items-center justify-center min-h-[60vh] gap-40 ">
       <div>
         <TypingAnimation fullText="Hire the best freelancers for any job, online." />
 
